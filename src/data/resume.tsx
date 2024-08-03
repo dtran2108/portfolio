@@ -28,7 +28,7 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     // { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    { href: "#projects", icon: CodeIcon, label: "Projects" },
+    { href: "/projects", icon: CodeIcon, label: "Projects" },
     // { href: "#", icon: PencilLine, label: "Notes" },
   ],
   contact: {
@@ -143,6 +143,29 @@ export const DATA = {
         },
       ],
       image: "/telto.png",
+      video: "",
+    },
+    {
+      title: "Commercial Digitals",
+      href: "https://www.commercialdigitals.com",
+      dates: "",
+      active: true,
+      description:
+        "Developed the landing page for Commercial Digitals, a forward-thinking digital marketing agency. They specialize in SEO, social media management, web development, and content creation to enhance online presence and drive business growth.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "TailwindCSS",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.commercialdigitals.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/cdweb.png",
       video: "",
     },
     {
