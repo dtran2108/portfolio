@@ -121,7 +121,7 @@ export const DATA = {
   projects: [
     {
       title: "Telto",
-      href: "https://telto.xprodedge.com/en/welcome",
+      href: "https://telto.xprodedge.com/",
       dates: "",
       active: true,
       description:
@@ -138,7 +138,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://telto.xprodedge.com/en/welcome",
+          href: "https://telto.xprodedge.com/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
