@@ -13,11 +13,7 @@ export const DATA = {
   name: 'Tran Duong',
   initials: 'TD',
   url: 'https://tran-duong.vercel.app/',
-  location: (
-    <span className='flex items-center'>
-      <MapPin className='mr-2 h-4 w-4' strokeWidth={1} /> Kaohsiung, Taiwan
-    </span>
-  ),
+  location: 'Kaohsiung, Taiwan',
   locationLink: '',
   description: '3+ years of experience in Web Development',
   summary:
