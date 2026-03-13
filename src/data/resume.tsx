@@ -1,29 +1,42 @@
 import { Icons } from '@/components/icons';
-import { CodeIcon, HomeIcon, NotebookIcon, PencilLine } from 'lucide-react';
+import { SparklesText } from '@/components/ui/sparkles-text';
+import {
+  CodeIcon,
+  HomeIcon,
+  LocateIcon,
+  MapPin,
+  NotebookIcon,
+  PencilLine,
+} from 'lucide-react';
 
 export const DATA = {
   name: 'Tran Duong',
   initials: 'TD',
-  url: 'https://dillion.io',
-  location: '',
-  locationLink: 'https://www.google.com/maps/place/sanfrancisco',
-  description:
-    "3+ years of experience in Frontend Development, I'm always on the hunt for new technologies to master and passionate about giving back to the community through innovative projects.",
+  url: 'https://tran-duong.vercel.app/',
+  location: (
+    <span className='flex items-center'>
+      <MapPin className='mr-2 h-4 w-4' strokeWidth={1} /> Kaohsiung, Taiwan
+    </span>
+  ),
+  locationLink: '',
+  description: '3+ years of experience in Web Development',
   summary:
-    'Presented as a team player, a fast learner, and a beauty enthusiast, I love the process of creating a new product. Willing to work as a team member as well as an individual, I am excited to continue my career with a focus on building sites with high accessibility and responsiveness.',
+    'A fast learner who loves the process of creating new products. I adapt quickly, work seamlessly with teams, and am equally comfortable driving independent projects.',
   avatarUrl: '/me.jpeg',
   skills: [
-    'React',
+    'ReactJS',
     'Redux',
     'Next.js',
+    'HTML/CSS',
     'TailwindCSS',
-    'Typescript',
+    'ShadcnUI',
+    'Material UI',
+    'Ant Design',
     'Node.js',
+    'Nest.js',
     'Prisma',
     'Python',
-    'PostgreSQL',
-    'Docker',
-    'C++',
+    'Javascript/Typescript',
   ],
   navbar: [
     { href: '/', icon: HomeIcon, label: 'Home' },
@@ -64,48 +77,64 @@ export const DATA = {
       href: 'https://www.invincix.com',
       badges: [],
       location: 'Remote',
-      title: 'Associate Consultant - Fulltime',
+      title: 'Associate Consultant - Full time',
       logoUrl: '/invincix.png',
       start: 'June 2022 ',
       end: 'May 2024',
-      description:
-        'Worked as a Frontend developer in a team of 4 to develop task ticket management system using AngularJS on frontend side and Microsoft Azure Active Directory for authentication. Developed Instablood, an application that allows people to connect and donate blood, which has over 1,000 daily users in India and Vietnam. Led a team of 3 as a fullstack engineer to build a garage management system using Next.js 14, Nest.js, and Prisma.',
+      description: (
+        <>
+          <ul>
+            <li>
+              - Developed Instablood's management system, a web application that
+              connects and coordinates 1,000+ blood donors and recipients across
+              India and Vietnam.
+            </li>
+            <li>
+              - Developed a task ticket management system using AngularJS on
+              frontend side and Microsoft Azure Active Directory for
+              authentication.
+            </li>
+            <li>
+              - Led a team of 3 to build a garage management system using
+              Next.js 14, Nest.js, and Prisma.
+            </li>
+          </ul>
+          <p className='mt-2'>
+            <b>Tech stacks: </b>ReactJS, Redux, Prisma, Next.js, ShadcnUI,
+            Node.js, Nest.js, AngularJS, Recharts, Typescript, TailwindCSS
+          </p>
+        </>
+      ),
     },
     {
       company: 'eCarAid',
       badges: [],
       href: 'https://ecaraid.com',
       location: 'Remote',
-      title: 'React Developer - Part time',
+      title: 'Frontend Engineer - Part time',
       logoUrl: '/ecaraid.png',
       start: 'June 2021',
       end: 'June 2022',
-      description:
-        'Configured i18n for localization. Upgraded the source code from webpack version 4 to 5. Used Ant Design UI library and styled-component to build a customer website. Connected 50+ APIs and processed data for UI display and user interaction.',
-    },
-    {
-      company: 'VSL Software',
-      href: 'https://vslsoft.com',
-      badges: [],
-      location: 'Ho Chi Minh, Vietnam',
-      title: 'React Developer - Internship',
-      logoUrl: '/vsl.png',
-      start: 'March 2021',
-      end: 'May 2021',
-      description:
-        'Used Nextjs to build a client site. Configured HTML to meet company standards for SEO and Accessibility. Participated in an admin portal project with Reactjs and Redux. Connected APIs for internal use.',
-    },
-    {
-      company: 'Komit Vietnam',
-      href: 'http://komit-consulting.com',
-      badges: [],
-      location: 'Ho Chi Minh, Vietnam',
-      title: 'Odoo Developer - Internship',
-      logoUrl: '/komit.png',
-      start: 'July 2019',
-      end: 'September 2019',
-      description:
-        'Upgraded the backup tool from version 11 of Odoo to version 12 of Odoo. Developed basic features in the Odoo Invoicing module. Worked in a team of 3 members to prepare a P&L report based on Vietnamese regulations. Developed a new module to manage meeting room booking for the company in 1 week.',
+      description: (
+        <>
+          <ul>
+            <li>
+              - Worked as a Frontend Engineer to develop an admin management
+              system.
+            </li>
+            <li>
+              - Communicated closely with the Backend team to integrate 100+
+              APIs into the UI.
+            </li>
+            <li>- Configured i18n for localization.</li>
+            <li>- Upgraded the source code from webpack version 4 to 5.</li>
+          </ul>
+          <p className='mt-2'>
+            <b>Tech stacks: </b>ReactJS, Ant Design, Recharts, Typescript,
+            TailwindCSS
+          </p>
+        </>
+      ),
     },
   ],
   education: [
@@ -114,8 +143,16 @@ export const DATA = {
       href: 'https://www.nsysu.edu.tw',
       degree: "Bachelor's Degree of Computer Science (BCS)",
       logoUrl: '/nsysu.jpeg',
-      start: '2024',
-      end: '2028 (expected)',
+      start: 'February 2024',
+      end: 'January 2027 (expected)',
+      description: (
+        <div className='flex gap-1'>
+          <SparklesText className='text-sm'>
+            NSYSU International Student Scholarship holder
+          </SparklesText>{' '}
+          since the 2nd semester onward
+        </div>
+      ),
     },
   ],
   projects: [
@@ -125,7 +162,7 @@ export const DATA = {
       dates: '',
       active: true,
       description:
-        'Built a full-stack AI communication trainer featuring real-time voice interactions, role-play scenarios, and data-driven skill assessments. Integrated ElevenLabs AI, Supabase backend, and interactive analytics dashboards for educators.',
+        'A full-stack AI communication trainer featuring real-time voice interactions, role-play scenarios, and data-driven skill assessments. Integrated ElevenLabs AI, Supabase, and interactive analytics dashboards for English language learners.',
       technologies: [
         'Next.js',
         'Supabase',
@@ -151,7 +188,7 @@ export const DATA = {
       dates: '',
       active: true,
       description:
-        'I led a team of 4 to build Telto, a powerful SaaS application that digitizes and improves garage workflows. By managing job cards and inventory, Telto makes operations easier and more efficient.',
+        'Led a team of 4 to build Telto, an SaaS application that digitizes and improves garage workflows.',
       technologies: [
         'Next.js',
         'Node.js',
@@ -171,36 +208,13 @@ export const DATA = {
       image: '/telto.png',
       video: '',
     },
-    // {
-    //   title: "Commercial Digitals",
-    //   href: "https://www.commercialdigitals.com",
-    //   dates: "",
-    //   active: true,
-    //   description:
-    //     "Developed the landing page for Commercial Digitals, a forward-thinking digital marketing agency. They specialize in SEO, social media management, web development, and content creation to enhance online presence and drive business growth.",
-    //   technologies: [
-    //     "Next.js",
-    //     "Typescript",
-    //     "TailwindCSS",
-    //     "Shadcn UI",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://www.commercialdigitals.com",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //   ],
-    //   image: "/cdweb.png",
-    //   video: "",
-    // },
     {
       title: 'Saigonxanh',
       href: 'https://saigonxanh.vercel.app',
       dates: '',
       active: true,
       description:
-        "A community project I developed for a local non-profit organization. This initiative focuses on protecting Saigon's rivers by collecting and recycling waste. They install trash barriers, organize cleanups, and collaborate with communities to improve waste management.",
+        "A project for a local non-profit organization. This initiative focuses on protecting Saigon's rivers by collecting and recycling waste. They install trash barriers, organize cleanups, and collaborate with communities to improve waste management.",
       technologies: ['Next.js', 'Typescript', 'TailwindCSS', 'Shadcn UI'],
       links: [
         {
@@ -223,7 +237,7 @@ export const DATA = {
       dates: '',
       active: true,
       description:
-        "I designed and developed a wedding website for my friend's special day, incorporating personalized elements and features to celebrate their unique love story.",
+        "Designed and developed a wedding website for my friend's special day, incorporating personalized elements and features to celebrate their unique love story.",
       technologies: ['Next.js', 'Typescript', 'TailwindCSS', 'Shadcn UI'],
       links: [
         {
@@ -235,30 +249,6 @@ export const DATA = {
       image: '/duydienwedding.png',
       video: '',
     },
-    // {
-    //   title: "Bento Grid Wedding",
-    //   href: "https://wedding-uyq9-os5utryex-tran-duongs-projects-a30b6eff.vercel.app/scroll",
-    //   dates: "",
-    //   active: true,
-    //   description:
-    //     "I developed a trendy bento grid design specifically tailored to a wedding theme, incorporating elegant and modern elements to enhance the overall aesthetic.",
-    //   technologies: [
-    //     "Next.js",
-    //     "Typescript",
-    //     "TailwindCSS",
-    //     "Shadcn UI",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://wedding-uyq9-os5utryex-tran-duongs-projects-a30b6eff.vercel.app/scroll",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //   ],
-    //   image: "/bentogridwed.png",
-    //   video:
-    //     "",
-    // },
   ],
   hackathons: [
     {
