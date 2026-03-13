@@ -56,7 +56,7 @@ export const DATA = {
       },
       LinkedIn: {
         name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/tran-duong-frontend/',
+        url: 'https://www.linkedin.com/in/tran-boba-duong/',
         icon: Icons.linkedin,
 
         navbar: true,
