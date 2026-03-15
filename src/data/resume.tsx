@@ -184,7 +184,7 @@ export const DATA = {
       dates: '',
       active: true,
       description:
-        'Led a team of 4 to build Telto, an SaaS application that digitizes and improves garage workflows.',
+        'Led a team of 3 to build Telto, an SaaS application that digitizes and improves garage workflows.',
       technologies: [
         'Next.js',
         'Node.js',
@@ -246,22 +246,5 @@ export const DATA = {
       video: '',
     },
   ],
-  hackathons: [
-    {
-      title: 'DeveloperWeek Hackathon',
-      dates: 'February 3rd - 4th, 2018',
-      location: 'San Francisco, California',
-      description:
-        'Developed a web application which aggregates social media data regarding cryptocurrencies and predicts future prices.',
-      image:
-        'https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/developer-week.jpg',
-      links: [
-        {
-          title: 'Github',
-          icon: <Icons.github className='h-4 w-4' />,
-          href: 'https://github.com/cryptotrends/cryptotrends',
-        },
-      ],
-    },
-  ],
+  hackathons: [],
 } as const;
